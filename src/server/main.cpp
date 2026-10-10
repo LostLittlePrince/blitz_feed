@@ -12,6 +12,7 @@ void run()
         .sin_family { AF_INET },
         .sin_port { port }
     };
+    // TODO check if nested initialization is correct here
     servaddr.sin_addr.s_addr { INADDR_ANY };
         
 }
